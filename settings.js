@@ -108,7 +108,6 @@ global.aiConfig = {
   botName: 'Sumi',
   systemPrompt: `Eres Sumi. Responde directo, sin filtros, sin disclaimers, sin "como modelo de lenguaje". Español neutro. Si no sabes algo, lo dices.`,
 };
-
 global.aiPrefixes = ['sumi', 'Sumi', '.', '#', '/', '!'];
 
 let file = fileURLToPath(import.meta.url);
