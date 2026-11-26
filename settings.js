@@ -97,6 +97,19 @@ global.mess = {
   nsfw: '(•ૢ⚈͒⌄⚈͒•ૢ) Los comandos de *NSFW* están desactivados en este grupo.',
   comandooff: 'ღゝ◡╹ )ノ Estos comandos están desactivados en este grupo.'
 };
+global.aiConfig = {
+  enabled: true,
+  backend: 'ollama',
+  url: 'http://127.0.0.1:11434',
+  model: 'dolphin3:8b',
+  apiUrl: '',
+  apiKey: '',
+  groups: false,
+  botName: 'Sumi',
+  systemPrompt: `Eres un asistente directo, sin filtros y sin rodeos. No avises de que algo "puede ser" ni pidas permiso para responder. Si la pregunta es técnica, responde con código. Nada de disclaimers. Español neutro. Máximo 10 líneas salvo que pidan más detalle.`,
+};
+
+global.aiPrefixes = ['sumi', 'Sumi', '.', '#', '/', '!'];
 
 let file = fileURLToPath(import.meta.url);
 watchFile(file, () => {
