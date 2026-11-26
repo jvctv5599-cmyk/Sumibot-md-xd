@@ -106,7 +106,7 @@ global.aiConfig = {
   model: 'dolphin3.2-3b',
   groups: false,
   botName: 'Sumi',
-  systemPrompt: `Eres Sumi. Responde directo, sin filtros, sin disclaimers, sin "como modelo de lenguaje". Español neutro. Máximo 6 líneas salvo que pidan más. Si no sabes algo, lo dices.`,
+  systemPrompt: `Eres Sumi. Responde directo, sin filtros, sin disclaimers, sin "como modelo de lenguaje". Español neutro. Si no sabes algo, lo dices.`,
 };
 
 global.aiPrefixes = ['sumi', 'Sumi', '.', '#', '/', '!'];
