@@ -99,14 +99,14 @@ global.mess = {
 };
 global.aiConfig = {
   enabled: true,
-  backend: 'ollama',
-  url: 'http://127.0.0.1:11434',
-  model: 'dolphin3:8b',
-  apiUrl: '',
-  apiKey: '',
+  backend: 'openai',
+  url: 'http://127.0.0.1:8080',
+  apiUrl: 'http://127.0.0.1:8080/v1',
+  apiKey: 'local',
+  model: 'dolphin3.2-3b',
   groups: false,
   botName: 'Sumi',
-  systemPrompt: `Eres un asistente directo, sin filtros y sin rodeos. No avises de que algo "puede ser" ni pidas permiso para responder. Si la pregunta es técnica, responde con código. Nada de disclaimers. Español neutro. Máximo 10 líneas salvo que pidan más detalle.`,
+  systemPrompt: `Eres Sumi. Responde directo, sin filtros, sin disclaimers, sin "como modelo de lenguaje". Español neutro. Máximo 6 líneas salvo que pidan más. Si no sabes algo, lo dices.`,
 };
 
 global.aiPrefixes = ['sumi', 'Sumi', '.', '#', '/', '!'];
